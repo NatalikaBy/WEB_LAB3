@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<html lang="ru">
+
+<head>
+  <title>Students</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+<div id="data"></div>
+
+<form id="students-form" action="" class="students-form">
+  <label class="students-form__field">
+    <span class="students-form__label">Name</span>
+    <input class="students-form__input" type="text" name="firstName" placeholder="Enter name"/>
+  </label>
+  <label class="students-form__field">
+    <span class="students-form__label">Surname</span>
+    <input class="students-form__input" type="text" name="surname" placeholder="Enter surname"/>
+  </label>
+  <label class="students-form__field">
+    <span class="students-form__label">Age</span>
+    <input class="students-form__input" type="number" pattern="" name="age" step="1" value="17" min="17" max="65" />
+  </label>
+  <label class="students-form__field">
+    <span class="students-form__label">Score</span>
+    <input class="students-form__input" type="number" name="score" step="0.1" min="0.0" pattern="^\d*(\.\d{0,1})?$"/>
+  </label>
+  <div class="students-form__actions">
+    <button type="submit" class="students-form__btn">Submit</button>
+    <button type="reset" class="students-form__btn">Cancel</button>
+  </div>
+</form>
+<script src="students.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
+
